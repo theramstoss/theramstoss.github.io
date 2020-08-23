@@ -1,4 +1,4 @@
-import Papa from 'dna/node_modules/papaparse/papaparse.js'
+import Papa from '../node_modules/papaparse/papaparse.js';
 
 document.querySelector('form').onsubmit = function() {
     const sequenceFile = document.getElementById('sequence').files[0];
@@ -12,7 +12,7 @@ document.querySelector('form').onsubmit = function() {
         })
     }
 
-    Papa.parse(databaseFile, {complete: function() {console.log('success!')}})
+    Papa.parse(databaseFile, {complete: function() {console.log('success!');}})
 
     // function loadDatabase() {
     //     return new Promise(resolve => {
