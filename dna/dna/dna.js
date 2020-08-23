@@ -1,4 +1,4 @@
-import Papa from '../node_modules/papaparse/papaparse.js';
+import * as Papa from '../node_modules/papaparse/papaparse.js';
 
 document.querySelector('form').onsubmit = function() {
     const sequenceFile = document.getElementById('sequence').files[0];
